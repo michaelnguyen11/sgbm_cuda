@@ -40,7 +40,7 @@ void cuda_init(SGM_PARAMS *params)
 	disp12MaxDiff = params->disp12MaxDiff;
 }
 
-cv::Mat compute_disparity(cv::Mat *left_img, cv::Mat *right_img, float *cost_time)
+cv::Mat compute_disparity(cv::Mat *left_img, cv::Mat *right_img)
 {
 	if(CV_8UC1 !=  left_img->type() || CV_8UC1 != right_img->type())
 	{
